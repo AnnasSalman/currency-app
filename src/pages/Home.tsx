@@ -9,6 +9,8 @@ import CurrencyChart from '../components/CurrencyChart';
 import {PageHeader} from '../components/styled/PageHeader';
 import {CustomTextField, CustomAutoComplete} from '../components/styled/CustomTextField';
 
+
+// Get a random color hex code
 const getRandomColor = (): string => {
     const letters = '0123456789ABCDEF';
     let color = '#';
@@ -26,6 +28,7 @@ const getDatesForHistoricalDataFetch = (months: number): string[] => {
     ];
 }
 
+// Vanilla splice meyhod but without mutuating the original array  
 const spliceNoMutate = (myArray: any, indexToRemove: number): [] => {
     return myArray.slice(0,indexToRemove).concat(myArray.slice(indexToRemove+1));
 }
